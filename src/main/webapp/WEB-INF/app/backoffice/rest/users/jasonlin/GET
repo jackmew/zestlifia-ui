@@ -1,0 +1,15 @@
+{
+  "status" : 200,
+  "total" : 1,
+  "limit" : 0,
+  "offset" : 0,
+  "items" : [ {
+    "_id": "jasonlin",
+    "username" : "jasonlin",
+    "display" : "林晉陞",
+    "email" : "jasonlin@leandev.com.tw",
+    "effectiveDate": "2010-01-01T00:00:00.000Z",
+    "mobile" : "+886935-571-747",
+    "note": "測試用資料"
+  } ]
+}

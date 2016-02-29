@@ -1,0 +1,151 @@
+.container-fluid {
+    padding-right: 30px!important;
+    padding-left: 30px!important;
+}
+hr {
+    border-color: rgb(0, 143, 197) !important;
+}
+
+/* 放在右邊 ie 才會正常 */
+.form-group .required .control-label:after,
+.row .required .control-label:after {
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: 2px;
+    top:7px;
+}
+.col-centered {
+    float: none !important;
+    margin: 0 auto;
+}
+.form-group label {
+    font-weight: normal !important;
+}
+th {
+    font-weight: normal !important;
+}
+/* TabPanel nav */
+.nav-tabs > li > a{
+    color: #868585 ;
+
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+
+    /*-webkit-border-radius: 0!important;*/
+    /*-moz-border-radius: 0!important;*/
+    /*border-radius: 0!important;*/
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+    border-top: 1px solid #197de1!important;
+    border-left: 1px solid #197de1!important;
+    border-right: 1px solid #197de1!important;
+
+    color: #337ab7 !important;
+    /*border-top: 2px solid #197de1 !important;*/
+
+    /*-webkit-border-radius: 0!important;*/
+    /*-moz-border-radius: 0!important;*/
+    /*border-radius: 0!important;*/
+}
+
+.carousel img {
+    /*min-width: 100%;*/
+    margin: 0 auto;
+}
+.btn-circle {
+    -moz-border-radius: 50%!important;
+    -webkit-border-radius: 50%!important;
+    -khtml-border-radius: 50%!important;
+    border-radius: 50%!important;
+}
+.commandbar {
+    margin: 0 -6px;
+}
+.commandbar-btn {
+    margin: 0 6px;
+}
+/* icon color */
+.i-info {
+    color: #5bc0de;
+}
+.i-success {
+    color: #5cb85c;
+}
+.i-warning {
+    color: #f0ad4e;
+}
+.i-danger {
+    color: #d9534f;
+}
+
+
+/* gutter */
+/*
+將 > 改成空白
+https://www.w3.org/TR/CSS21/selector.html%23id-selectors
+*/
+.no-gutter [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.gutter-10 [class*='col-'] {
+    padding-right: 5px ;
+    padding-left: 5px;
+}
+.gutter-12 [class*='col-'] {
+    padding-right: 6px ;
+    padding-left: 6px;
+}
+.gutter-20 [class*='col-'] {
+    padding-right: 10px ;
+    padding-left: 10px;
+}
+/*
+改為使用thin-gutter
+若是使用thin-gutter
+就必須修改
+.form-horizontal .form-group
+.form-horizontal .row
+的margin
+*/
+.thin-gutter [class*='col-'] {
+    padding-right: 6px ;
+    padding-left: 6px;
+}
+.form-horizontal .form-group,
+.form-horizontal .row
+{
+    margin-left: -6px!important;
+    margin-right: -6px!important;
+}
+
+.main-blue {
+    color: steelblue;
+}
+
+
+
+/* Test */
+/* Grid System */
+/*.layer1 {*/
+    /*background-color: silver;*/
+/*}*/
+/*.layer2 {*/
+    /*background-color: sandybrown;*/
+/*}*/
+/*.layer3 {*/
+    /*background-color: skyblue;*/
+/*}*/
+/*.box {*/
+    /*background-color: mediumslateblue;*/
+/*}*/
+/*label {*/
+    /*background-color: seagreen;*/
+/*}*/
+/*input {*/
+    /*background-color: red;*/
+/*}*/

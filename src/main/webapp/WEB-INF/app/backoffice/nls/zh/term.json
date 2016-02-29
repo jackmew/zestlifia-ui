@@ -1,0 +1,82 @@
+{
+    "ok": "確定",
+    "cancel": "取消",
+    "yes": "是",
+    "no": "否",
+    "hint": "提示 ",
+    "warning": "警告",
+    "confirm": "確認",
+    "input": "輸入",
+    "please": "請",
+
+    "system": "系統",
+    "user": "用戶",
+    "role": "角色",
+    "privilege": "權限",
+    "activity": "活動",
+    "account": "帳號",
+    "setting": "設定",
+    "sales": "銷售",
+    "customer": "客戶",
+    "company": "公司",
+    "product": "商品",
+    "sales_order": "訂單",
+    "delivery": "出貨",
+    "invoice": "發票",
+    "purchase": "採購",
+    "vendor": "廠商",
+    "purchase_order": "採購單",
+    "payment": "付款",
+    "collection": "收款",
+    "personal": "個人",
+    "inbox": "收件匣",
+    "bulletin": "公告",
+    "profile": "基本資料",
+
+    "log_in": "登入",
+
+    "username": "用戶名稱",
+    "password": "用戶密碼",
+    "mobile": "行動電話",
+    "email": "電子郵件",
+    "display_name": "顯示名稱",
+    "display$n": "顯示名稱",
+    "effective_date": "生效日期",
+    "effective$d": "生效日",
+    "expire_date": "停用日期",
+    "expire$d": "停用日期",
+
+    "basic_information": "基本資料",
+    "contact_information": "聯絡資料",
+
+
+    "browse": "瀏覽",
+    "edit": "編輯",
+    "add": "新增",
+    "search": "搜尋",
+    "reset": "重設",
+    "delete": "刪除",
+    "close": "關閉",
+    "save": "儲存",
+    "page:_": "頁次：",
+
+    "manage_user": "管理使用者",
+    "no_data_to_display": "沒有資料",
+    "total:_${0}_records": "總計：${0} 筆記錄",
+
+    "power_by_uweaver": "採用 uWeaver 技術",	
+    "lot_search":"母批查詢",
+    "abnormal_clone":"異常情形都相同",
+
+    "team_formation":"D1 組織團隊",
+    "problem_description":"D2 問題描述",
+    "interim_containment_actions":"D3 暫時性對策",
+    "root_cause_analysis":"D4 問題原因分析",
+    "corrective_actions":"D5 永久性對策",
+    "verification_of_corrective_actions":"D6 效果驗證",
+    "preventive_actions":"D7 預防再發",
+    "standardization":"D8 標準化"
+
+
+
+}

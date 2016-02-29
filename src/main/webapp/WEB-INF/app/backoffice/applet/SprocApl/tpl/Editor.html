@@ -1,0 +1,62 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="sprocNo" class="control-label col-sm-1 gutter">特採單號</label>
+        <div class="col-sm-3 gutter">
+            <input type="text" class="form-control" name="sprocNo" id="sprocNo" readonly/>
+        </div>
+        <div class="required">
+            <label for="sprocArea" class="control-label col-sm-1 gutter">開立地區</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" name="sprocArea" id="sprocArea">
+                    <option selected="selected" value="">台灣地區</option>
+                    <option value="">昆山地區</option>
+                    <option value="">深圳地區</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="sprocDate" class="control-label col-sm-1 gutter">建立日期</label>
+        <div class="col-sm-3 gutter">
+            <input type="date" class="form-control" name="sprocDate" id="sprocDate" value="2016-01-01" readonly/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div data-uw-anchor="sprocType" class="required">
+            <label for="sprocType" class="control-label col-sm-1 gutter">特採類別</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" name="sprocType" id="sprocType">
+                    <option value="" selected disabled></option>
+                    <option value="ng">NG品(物性/外觀)</option>
+                    <option value="notCorrespond">不符合客規出貨</option>
+                    <option value="notEnoughTime">保質期不足(含展延)-庫存調度</option>
+                    <option value="notEnoughTime">保質期不足(含展延)-客戶退貨</option>
+                    <option value="notEnoughTime">保質期不足(含展延)-取消訂單</option>
+                    <option value="notEnoughTime">保質期不足(含展延)-投產品質異常(外觀)</option>
+                    <option value="notEnoughTime">保質期不足(含展延)-投產品質異常(物性)</option>
+                    <option value="notTest">未檢驗出貨-業務急拉單</option>
+                    <option value="notTest">未檢驗出貨-生產延遲</option>
+                    <option value="notTest">未檢驗出貨-排程延遲</option>
+                    <option value="newProduct">新產品-9料研發品</option>
+                    <option value="newProduct">新產品-研發品品質異常</option>
+                </select>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">符合HSF產品</label>
+        <div class="input-group col-sm-3 gutter">
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="Y">
+                    <span>是</span>
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="N">
+                    <span>否</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div data-uw-anchor="tabPanelEditor"></div>
+</form>

@@ -1,0 +1,8 @@
+{
+    "Login_successfully_": "登入成功．",
+    "Login_failed!": "登入失敗！",
+    "Data_not_found!": "找不到指定的資料！",
+    "Server_Error": "伺服端發生錯誤！",
+    "Please_select_one_record.": "請選擇一筆資料．",
+    "Delete?": "確定刪除？"
+}

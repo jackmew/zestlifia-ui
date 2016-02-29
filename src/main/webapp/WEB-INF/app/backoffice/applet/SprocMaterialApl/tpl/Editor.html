@@ -1,0 +1,58 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="sprocNo" class="control-label col-sm-1 gutter">特採單號</label>
+        <div class="col-sm-3 gutter">
+            <input type="text" class="form-control" name="sprocNo" id="sprocNo" readonly/>
+        </div>
+        <div class="required">
+            <label for="sprocArea" class="control-label col-sm-1 gutter">開立地區</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" name="sprocArea" id="sprocArea">
+                    <option selected="selected" value="">台灣地區</option>
+                    <option value="">昆山地區</option>
+                    <option value="">深圳地區</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="sprocDate" class="control-label col-sm-1 gutter">建立日期</label>
+        <div class="col-sm-3 gutter">
+            <input type="date" class="form-control" name="sprocDate" id="sprocDate" value="" disabled/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="required">
+            <div data-uw-anchor="sprocType">
+                <label for="sprocType" class="control-label col-sm-1 gutter">特採類別</label>
+                <div class="col-sm-3 gutter">
+                    <select class="form-control" name="sprocType" id="sprocType">
+                        <option selected disabled></option>
+                        <option>外觀不良</option>
+                        <option>急料未檢</option>
+                        <option>特性不良</option>
+                        <option>新資材無檢視</option>
+                        <option>過期展延</option>
+                        <option>其他</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">符合HSF產品</label>
+        <div class="input-group col-sm-3 gutter">
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="Y">
+                    <span>是</span>
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="N">
+                    <span>否</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div data-uw-anchor="tabPanelEditor"></div>
+</form>

@@ -1,0 +1,68 @@
+{
+  "status" : 200,
+  "total" : 100,
+  "limit" : 12,
+  "offset" : 24,
+  "items" : [ {
+    "username" : "jasonlin",
+    "display" : "林晉陞",
+    "email" : "jasonlin@leandev.com.tw",
+    "effectiveDate": "2010-01-01T00:00:00.000Z",
+    "mobile" : "+886 935-571-747"
+  }, {
+    "username" : "mayshih",
+    "display" : "史麗梅",
+    "email" : "mayshih@leandev.com.tw",
+    "effectiveDate": "2010-01-01T00:00:00.000Z",
+    "mobile" : "+886 919-152-922"
+  }, {
+    "username" : "franklin",
+    "display" : "林褀富",
+    "email" : "franklin@leandev.com.tw",
+    "effectiveDate": "2013-01-01T00:00:00.000Z",
+    "mobile" : "+886 910-307-493"
+  }, {
+    "username" : "charlielee",
+    "display" : "李佳霖",
+    "email" : "charlielee@leandev.com.tw",
+    "effectiveDate": "2013-04-01T00:00:00.000Z",
+    "mobile" : "+886 936-208-438"
+  }, {
+    "username" : "jackho",
+    "display" : "何奇峰",
+    "email" : "jackho@leandev.com.tw",
+    "effectiveDate": "2013-08-11T00:00:00.000Z",
+    "mobile" : "+886 973-352-799"
+  }, {
+    "username" : "jessiehu",
+    "display" : "胡詠晴",
+    "email" : "jessiehu@leandev.com.tw",
+    "effectiveDate": "2012-07-20T00:00:00.000Z",
+    "mobile" : "+886 928-246-698"
+  }, {
+    "username" : "echokao",
+    "display" : "高明光",
+    "email" : "echokao@leandev.com.tw",
+    "effectiveDate": "2010-01-01T00:00:00.000Z",
+    "mobile" : "+886 987-909-246"
+  }, {
+    "username" : "gavinkuo",
+    "display" : "郭峰昌",
+    "email" : "gavinkuo@leandev.com.tw",
+    "effectiveDate": "2010-12-01T00:00:00.000Z",
+    "mobile" : "+886 935-170-846"
+  }, {
+    "username" : "jeanlin",
+    "display" : "林靜怡",
+    "email" : "jeanlin@leandev.com.tw",
+    "effectiveDate": "2011-08-20T00:00:00.000Z",
+    "expireDate": "2012-12-31T00:00:00.000Z",
+    "mobile" : "+886 926-222-632"
+  }, {
+    "username" : "anguschen",
+    "display" : "陳世明",
+    "email" : "anguschen@leandev.com.tw",
+    "effectiveDate": "2014-08-20T00:00:00.000Z",
+    "mobile" : "+886 960-286-710"
+  } ]
+}

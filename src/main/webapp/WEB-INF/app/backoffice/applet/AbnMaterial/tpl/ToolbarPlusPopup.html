@@ -1,0 +1,219 @@
+<div class="panel panel-primary">
+    <div data-uw-anchor="header" class="panel-heading">
+        <span data-uw-anchor="title">批號資料</span>
+    </div>
+    <div data-uw-anchor="content" class="panel-body">
+        <div class="container form-horizontal" style="width:900px;">
+            <div data-uw-anchor="badFields">
+                <div class="form-group">
+                    <label class="control-label col-sm-2">批號</label>
+                    <div class="col-sm-4 gutter">
+                        <input type="text" class="form-control" >
+                    </div>
+                    <label class="control-label col-sm-2"></label>
+                    <div class="col-sm-4 gutter">
+                        <button type="button" class="btn btn-default" data-uw-anchor="btnCalculator">
+                            <i value="bad" class="fa fa-calculator" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">原始數量</label>
+                    <div class="col-sm-4 gutter">
+                        <input type="number" class="form-control" data-uw-anchor="originalAmount"/>
+                    </div>
+                    <label class="control-label col-sm-2">已使用量</label>
+                    <div class="col-sm-4 gutter">
+                        <input type="number" class="form-control" data-uw-anchor="usedAmount"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2">異常量(修改前)</label>
+                    <div class="col-sm-4 gutter">
+                        <input type="number" class="form-control" data-uw-anchor="abnAmountBefore"/>
+                    </div>
+                    <label class="control-label col-sm-2">異常量(修改後)</label>
+                    <div class="col-sm-4 gutter">
+                        <input type="number" class="form-control" data-uw-anchor="abnAmountAfter"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 gutter">主要不良項目</label>
+                    <div class="col-sm-10 gutter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="bad"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" data-uw-anchor="sideBtn">
+                                    <i value="bad" class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 gutter">次要不良項目</label>
+                    <div class="col-sm-10 gutter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="bad"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" data-uw-anchor="sideBtn">
+                                    <i value="bad" class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" data-uw-anchor="abnLocation">
+                <div class="col-sm-12 gutter">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">異常發生位置</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <label class="control-label col-sm-2 gutter">人員拉取方向</label>
+                                <div class="col-sm-4 gutter">
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="updown" value="updown" checked>
+                                            <span>上放料</span>
+                                        </label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label>
+                                            <input type="radio" name="updown" value="updown">
+                                            <span>下放料</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <label class="control-label col-sm-1 gutter">異常大小</label>
+                                <div class="col-sm-5 gutter">
+                                    <input type="text" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group" data-uw-anchor="abnFequency">
+                <div class="col-sm-12 gutter">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">異常發生頻率</div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 gutter">
+                                    <table data-uw-anchor="gridFrequency" class="table table-bordered table-striped table-hover uw-selectable">
+                                        <tr>
+                                            <td style="width: 15px;"><span class="label label-primary">左側</span></td>
+                                            <td style="width: 200px;">
+                                                <div data-uw-anchor="left">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="left1" value="period">
+                                                        <span>週期</span>
+
+                                                    </label>
+
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="left1" value="random">
+                                                        <span>隨機</span>
+                                                    </label>
+
+                                                    <input type="text" class="form-control collapse"/>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="left2" value="option1">
+                                                        <span>間斷性</span>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="left2" value="option2">
+                                                        <span>連續性</span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-warning">中間</span></td>
+                                            <td>
+                                                <div data-uw-anchor="middle">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="middle1" value="period">
+                                                        <span>週期</span>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="middle1" value="random">
+                                                        <span>隨機</span>
+                                                    </label>
+                                                    <input type="text" class="form-control collapse"/>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="middle2" value="option1">
+                                                        <span>間斷性</span>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="middle2" value="option2">
+                                                        <span>連續性</span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="label label-danger">右側</span></td>
+                                            <td>
+                                                <div data-uw-anchor="right">
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="right1" value="period">
+                                                        <span>週期</span>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="right1" value="random">
+                                                        <span>隨機</span>
+                                                    </label>
+                                                    <input type="text" class="form-control collapse"/>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="right2" value="option1">
+                                                        <span>間斷性</span>
+                                                    </label>
+                                                    <label class="radio-inline">
+                                                        <input type="radio" name="right2" value="option2">
+                                                        <span>連續性</span>
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <label class="control-label col-sm-1 gutter">備註</label>
+                                <div class="col-sm-5 gutter">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="text-center">
+                        <button value="CONFIRM"
+                                class="btn btn-default" style="margin:5px;width:100px;color:steelblue;padding:8px 0px;">
+                            <span class="uw-text-center uw-text-normal" style="margin-top:3px;">確認</span>
+                        </button>
+                        <button value="CLOSE"
+                                class="btn btn-default" style="margin:5px;width:100px;color:steelblue;padding:8px 0px;">
+                            <span class="uw-text-center uw-text-normal" style="margin-top:3px;">關閉</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

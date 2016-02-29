@@ -1,0 +1,16 @@
+{
+  "status" : 200,
+  "total" : 1,
+  "limit" : 10,
+  "offset" : 0,
+  "items" : [ {
+    "oid": "1",
+    "id": "crm",
+    "name" : "CRM",
+    "title" : "Customer Resource Management",
+    "logo" : "crm",
+    "email" : "crmmgr@taiflex.com.tw",
+    "effectiveDate": "2014-01-01T00:00:00.000Z",
+    "domain" : "taiflex.com.tw"
+  } ]
+}

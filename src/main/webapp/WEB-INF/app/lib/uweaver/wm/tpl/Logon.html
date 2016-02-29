@@ -1,0 +1,20 @@
+<div data-role="page" style="overflow-y:hidden;">
+    <div data-role="content" style="min-height: 700px;">
+        <div class="uw-frame uw-corner uw-shadow uw-background"
+             style="width:320px; margin-left: auto; margin-right: auto; margin-top:20%">
+            <form class="uw-text ui-mini" style="padding:10px 20px">
+                <div>
+                    <img src="<%-config.logo%>" class="uw-logo" style="vertical-align: middle"/>
+                    <span class="uw-text-xl uw-text-strong"><%-config.title%></span>
+                </div>
+                <input name="username" value="" placeholder="Username" type="text" class="uw-text"
+                       data-uw-constraints="required alphaNumeric" data-clear-btn="true">
+                <input name="password" value="" placeholder="Password" type="password" class="uw-text"
+                       data-uw-constraints="required" data-clear-btn="true">
+                <button value="login" data-uw-stylish="none"
+                   class="ui-btn ui-corner-all ui-shadow ui-icon-check ui-btn-icon-left uw-text">Log In</button>
+                <div class="uw-text-s"><%-config.footnote%></div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+{
+   "total" : 100,
+   "limit" : 10,
+   "offset" : 0,
+   "items" : [
+        {"customer": "客戶一", "date": "2015-08-20", "no": "IT2015080010", "item": "A123411", "status": "已結案", "currentLevel": ""              , "receiver": "Anna Liu"},
+        {"customer": "客戶二", "date": "2015-09-30", "no": "IT2015090008", "item": "A123499", "status": "未結案", "currentLevel": "品保檢閱結案報告", "receiver": "Yumin Chuo"}
+   ],
+   "status" : "200"
+ }

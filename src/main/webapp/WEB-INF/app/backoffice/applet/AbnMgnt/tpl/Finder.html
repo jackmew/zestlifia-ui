@@ -1,0 +1,67 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">類別</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option value="" selected disabled></option>
+                <option value="">驗退</option>
+                <option value="">倉退</option>
+                <option value="">成品原料</option>
+                <option value="">接單代料</option>
+                <option value="">接單不代料</option>
+                <option value="">委外成品</option>
+                <option value="">委外半成品</option>
+                <option value="">成品外觀</option>
+                <option value="">成品特性</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-1 gutter">開立地區</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option value="" selected disabled></option>
+                <option value="">台灣地區</option>
+                <option value="">昆山地區</option>
+                <option value="">深圳地區</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-1 gutter"></label>
+        <div class="col-sm-1 gutter">
+            <button value="TASKS" class="btn btn-default fa fa-search" style="color:steelblue;">
+                <span>查詢</span>
+            </button>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">異常工作屬性</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option value="" selected disabled></option>
+                <option value="">IQC</option>
+                <option value="">PQC</option>
+                <option value="">FQC</option>
+            </select>
+        </div>
+        <div class="required" data-uw-anchor="createDateStart">
+            <label class="control-label col-sm-1 gutter">建立日期(起)</label>
+            <div class="col-sm-3 gutter">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+        <div class="required" data-uw-anchor="createDateEnd">
+            <label class="control-label col-sm-1 gutter">建立日期(迄)</label>
+            <div class="col-sm-3 gutter">
+                <input type="date" class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">異常單號</label>
+        <div class="col-sm-3 gutter">
+            <input type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <table data-uw-anchor="grid" class="table table-bordered table-striped table-hover uw-selectable">
+        </table>
+    </div>
+</form>

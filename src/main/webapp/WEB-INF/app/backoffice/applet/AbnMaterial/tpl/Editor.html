@@ -1,0 +1,97 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <div data-uw-anchor="abnNo">
+            <label for="abnNo" class="control-label col-sm-1 gutter">異常單號</label>
+            <div class="col-sm-3 gutter">
+                <input type="text" class="form-control"  name="abnNo" id="abnNo" readonly
+                placeholder="開立區域+異常工作屬性+YYYYMM+4位流水號">
+            </div>
+        </div>
+        <div data-uw-anchor="createDate" class="required">
+            <label class="control-label col-sm-1 gutter">建立日期</label>
+            <div class="col-sm-3 gutter">
+                <input type="date" class="form-control" name="createDate"
+                       placeholder="預設系統日期" readonly>
+            </div>
+        </div>
+        <div data-uw-anchor="abnWorkAttribute">
+            <label class="control-label col-sm-1 gutter">異常工作屬性</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" aria-describedby="inputError2Status">
+                    <option selected="selected">IQC</option>
+                    <option>PQC</option>
+                    <option>FQC</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div data-uw-anchor="createArea">
+            <label class="control-label col-sm-1 gutter">開立地區</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control">
+                    <option value="" selected="selected">台灣地區</option>
+                    <option value="">昆山地區</option>
+                    <option value="">深圳地區</option>
+                </select>
+            </div>
+        </div>
+        <div data-uw-anchor="isHSF">
+            <label class="control-label col-sm-1 gutter">符合HSF產品</label>
+            <div class="col-sm-3 gutter">
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="isHSF" value="Y">
+                            <span>是</span>
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="isHSF" value="N">
+                            <span>否</span>
+                        </label>
+                    </div>
+            </div>
+        </div>
+        <div data-uw-anchor="chemical">
+            <label class="control-label col-sm-1 gutter">化學品</label>
+            <div class="col-sm-3 gutter">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isChemical" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isChemical" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div data-uw-anchor="issueNo">
+            <label class="control-label col-sm-1 gutter">客訴單號</label>
+            <div class="col-sm-3 gutter">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="relationalNo">
+            <label class="control-label col-sm-1 gutter">關聯單號</label>
+            <div class="col-sm-3 gutter">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div data-uw-anchor="tabPanelEditor"></div>
+</form>

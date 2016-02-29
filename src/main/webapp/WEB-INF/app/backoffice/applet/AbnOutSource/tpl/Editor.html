@@ -1,0 +1,61 @@
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="abnNo" class="control-label col-sm-1 gutter">異常單號</label>
+        <div class="col-sm-3 gutter">
+            <input type="text" class="form-control"  name="abnNo" id="abnNo" data-uw-anchor="abnNo" readonly placeholder="開立區域+異常工作屬性+YYYYMM+4位流水號">
+        </div>
+        <label class="control-label col-sm-1 gutter">建立日期</label>
+        <div for="createDate" class="col-sm-3 gutter">
+            <input type="date" class="form-control" name="createDate" id="createDate" data-uw-anchor="createDate" readonly>
+        </div>
+        <div class="required">
+            <label for="abnWorkAttribute" class="control-label col-sm-1 gutter">異常工作屬性</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" name="abnWorkAttribute" id="abnWorkAttribute" data-uw-anchor="abnWorkAttribute">
+                    <option selected="selected">PQC</option>
+                    <option>FQC</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="required">
+            <label for="createArea" class="control-label col-sm-1 gutter">開立地區</label>
+            <div class="col-sm-3 gutter">
+                <select class="form-control" name="createArea" id="createArea" data-uw-anchor="createArea">
+                    <option value="">台灣地區</option>
+                    <option value="" selected="selected">昆山地區</option>
+                    <option value="">深圳地區</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="collapse" data-uw-anchor="isMerge">
+            <label class="control-label col-sm-1">是否合併</label>
+            <div class="col-sm-3">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isMerge" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isMerge" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="collapse" data-uw-anchor="mergeNo">
+            <label class="control-label col-sm-1">合併單號</label>
+            <div class="col-sm-3">
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div data-uw-anchor="tabPanelEditor"></div>
+</form>

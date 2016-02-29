@@ -1,0 +1,67 @@
+<div class="panel panel-primary">
+    <div data-uw-anchor="header" class="panel-heading">
+        <span data-uw-anchor="title">批號資料</span>
+    </div>
+    <div data-uw-anchor="content" class="panel-body">
+        <div class="container form-horizontal" style="width:600px;">
+            <div class="form-group">
+                <div class="required">
+                    <label class="control-label col-sm-2">批號</label>
+                    <div class="col-sm-10 gutter">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="required">
+                    <label class="control-label col-sm-2 gutter">不良項目</label>
+                    <div class="col-sm-10 gutter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="bad"/>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" data-uw-anchor="sideBtn">
+                                <i value="bad" class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                            </button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="required">
+                    <label class="control-label col-sm-2">異常數量</label>
+                    <div class="col-sm-10 gutter">
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="required">
+                    <label for="lineType" class="control-label col-sm-2">機台別</label>
+                    <div class="col-sm-10 gutter">
+                        <select class="form-control" name="lineType" id="lineType">
+                            <option selected disabled></option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div class="navbar-right">
+                        <button value="CONFIRM"
+                                class="btn btn-default" style="margin:5px;width:100px;color:steelblue;padding:8px 0px;">
+                            <span class="uw-text-center uw-text-normal" style="margin-top:3px;">確認</span>
+                        </button>
+                        <button value="CLOSE"
+                                class="btn btn-default" style="margin:5px;width:100px;color:steelblue;padding:8px 0px;">
+                            <span class="uw-text-center uw-text-normal" style="margin-top:3px;">關閉</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

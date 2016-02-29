@@ -1,0 +1,152 @@
+{
+  "total" : 11,
+  "limit" : 0,
+  "offset" : 0,
+  "items" : [ {
+    "id" : "Inbox/Inbox",
+    "name" : "待簽核",
+    "icon" : "inbox",
+    "category" : "我的 CRM"
+  }, {
+    "id" : "MyNotification/MyNotification",
+    "name" : "通知",
+    "icon" : "comment",
+    "category" : "我的 CRM"
+  }, {
+    "id" : "Favorite",
+    "name" : "追蹤案件",
+    "icon" : "eye",
+    "category" : "我的 CRM"
+  }, {
+    "id" : "Dashboard",
+    "name" : "儀表板",
+    "icon" : "tachometer",
+    "category" : "我的 CRM"
+  }, {
+    "id" : "IssueApl/IssueApl",
+    "name" : "客訴案件受理",
+    "icon" : "file-text",
+    "category" : "客訴作業"
+  }, {
+    "id" : "IssueMgnt/IssueMgnt",
+    "name" : "客訴案件管理",
+    "icon" : "files-o",
+    "category" : "客訴作業"
+  }, {
+    "id" : "IssueAnalyze",
+    "name" : "客訴統計分析",
+    "icon" : "bar-chart",
+    "category" : "客訴作業"
+  }, {
+    "id" : "AbnMaterial/AbnMaterial",
+    "name" : "原料異常申請",
+    "icon" : "file-text",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnOutSource/AbnOutSource",
+    "name" : "委外異常申請",
+    "icon" : "file-text",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnEndProductFeature/AbnEndProductFeature",
+    "name" : "成品特性異常申請",
+    "icon" : "file-text",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnEndProductAppearance/AbnEndProductAppearance",
+    "name" : "成品外觀異常申請",
+    "icon" : "file-text",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnEndProductEffect/AbnEndProductEffect",
+    "name" : "成品異常效果確認",
+    "icon" : "recycle",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnMgnt/AbnMgnt",
+    "name" : "管理異常申請",
+    "icon" : "files-o",
+    "category" : "異常作業"
+  }, {
+    "id" : "AbnAnalyze",
+    "name" : "異常統計分析",
+    "icon" : "bar-chart",
+    "category" : "異常作業"
+  }, {
+    "id" : "SprocApl/SprocApl",
+    "name" : "成品特採申請",
+    "icon" : "file-text",
+    "category" : "特採作業"
+  }, {
+    "id" : "SprocMaterialApl/SprocMaterialApl",
+    "name" : "原料特採申請",
+    "icon" : "file-text",
+    "category" : "特採作業"
+  }, {
+    "id" : "SprocMgnt/SprocMgnt",
+    "name" : "管理特採申請",
+    "icon" : "files-o",
+    "category" : "特採作業"
+  }, {
+    "id" : "SpocAnalyze",
+    "name" : "特採統計分析",
+    "icon" : "bar-chart",
+    "category" : "特採作業"
+  }, {
+    "id" : "IssueBPM",
+    "name" : "客訴作業規則",
+    "icon" : "wrench",
+    "category" : "作業規則"
+  }, {
+    "id" : "WorkRuleAbnormalApl/WorkRuleAbnormalApl",
+    "name" : "異常作業規則",
+    "icon" : "wrench",
+    "category" : "作業規則"
+  }, {
+    "id" : "SprocBPM",
+    "name" : "特採作業規則",
+    "icon" : "wrench",
+    "category" : "作業規則"
+  }, {
+    "id" : "OrgMgnt",
+    "name" : "組織管理",
+    "icon" : "sitemap",
+    "category" : "作業規則"
+  }, {
+    "id" : "CodeData",
+    "name" : "系統代碼",
+    "icon" : "key",
+    "category" : "作業規則"
+  }, {
+    "id" : "PrivilegeMgnt",
+    "name" : "權限管理",
+    "icon" : "key",
+    "category" : "系統管理"
+  }, {
+    "id" : "Test/GridSystem/GridSystem",
+    "name" : "Grid System",
+    "icon" : "key",
+    "category" : "Test"
+  }, {
+    "id" : "Test/Ajax/Ajax",
+    "name" : "Ajax",
+    "icon" : "key",
+    "category" : "Test"
+  }, {
+    "id" : "Test/FormDemo/FormDemo",
+    "name" : "Form",
+    "icon" : "key",
+    "category" : "Test"
+  }, {
+       "id" : "Test/Gridcrud/GridcrudDemo",
+       "name" : "Gridcrud",
+       "icon" : "key",
+       "category" : "Test"
+  }, {
+         "id" : "Test/Commandbar/CommandbarDemo",
+         "name" : "Commandbar",
+         "icon" : "key",
+         "category" : "Test"
+  } ],
+  "status" : "200"
+}

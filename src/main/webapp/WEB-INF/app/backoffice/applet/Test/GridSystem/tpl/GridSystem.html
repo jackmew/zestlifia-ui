@@ -1,0 +1,693 @@
+<!--
+預設最外層有container
+TDIApplet className: "container"
+<div class="container" style="display: block; height: 100%;"></div>
+-->
+<div class="layer1">
+    <div class="row layer2">
+        <div class="col-sm-4 layer3" style="height: 200px;">box1</div>
+        <div class="col-sm-4 layer3">box2</div>
+        <div class="col-sm-4 layer3">box3</div>
+    </div>
+</div>
+<!-- 以上看出 box & box 之間 沒有任何間隔-->
+<div class="layer1">
+    <div class="row layer2">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 以上
+box & box 有gutter -> col padding-right: 15px + padding-left: 15px; => gutter = 30px;
+row & row 之間 沒有任何間隔
+-->
+<hr/>
+<div class="layer1">
+    <div class="row layer2 thin-gutter">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<div class="layer1">
+    <div class="row layer2 no-gutter">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<!-- 以上demo thin-gutter & no-gutter -->
+<!-- 沒有form-horizontal -->
+<div class="layer1">
+    <div class="form-group layer2">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 標準form-horizontal 跟 form-group組合 => 幾乎跟row一樣 但多了margin-bottom: 15px;-->
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 測試no-gutter -->
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2 no-gutter">
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box1
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box2
+            </div>
+        </div>
+        <div class="col-sm-4 layer3">
+            <div class="box">
+                box3
+            </div>
+        </div>
+    </div>
+</div>
+<hr/>
+<h1>基本型</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2">
+        <label class="control-label col-sm-1 ">客訴單號</label>
+        <div class="col-sm-3 layer3">
+            <input type="text" class="form-control"/>
+        </div>
+        <label class="control-label col-sm-1">客訴日期</label>
+        <div class="col-sm-3 layer3">
+            <input type="date" class="form-control" name="issueDate">
+        </div>
+        <label class="control-label col-sm-1">填單人</label>
+        <div class="col-sm-3 layer3">
+            <select class="form-control">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group layer2">
+        <label class="control-label col-sm-1">符合HSF產品</label>
+        <div class="col-sm-3">
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="Y">
+                    <span>是</span>
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="N">
+                    <span>否</span>
+                </label>
+            </div>
+        </div>
+        <label class="control-label col-sm-1">臨時措施</label>
+        <div class="col-sm-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option1">
+                    <span>更換原料</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option2">
+                    <span>通知品保判定</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option3">
+                    <span>開立異常單</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option3">
+                    <span>截取異常樣品</span>
+                </label>
+            </div>
+        </div>
+        <label class="control-label col-sm-1">備註</label>
+        <div class="col-sm-3">
+            <textarea class="form-control" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group layer2">
+        <label class="control-label col-sm-1 gutter">發現者</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<h1>基本型 + no-gutter</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2 no-gutter">
+        <label class="control-label col-sm-1 ">客訴單號</label>
+        <div class="col-sm-3 layer3">
+            <input type="text" class="form-control"/>
+        </div>
+        <label class="control-label col-sm-1">客訴日期</label>
+        <div class="col-sm-3 layer3">
+            <input type="date" class="form-control" name="issueDate">
+        </div>
+        <label class="control-label col-sm-1">填單人</label>
+        <div class="col-sm-3 layer3">
+            <select class="form-control">
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group layer2 no-gutter">
+        <label class="control-label col-sm-1">符合HSF產品</label>
+        <div class="col-sm-3">
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="Y">
+                    <span>是</span>
+                </label>
+            </div>
+            <div class="radio-inline">
+                <label>
+                    <input type="radio" name="isHSF" value="N">
+                    <span>否</span>
+                </label>
+            </div>
+        </div>
+        <label class="control-label col-sm-1">臨時措施</label>
+        <div class="col-sm-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option1">
+                    <span>更換原料</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option2">
+                    <span>通知品保判定</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option3">
+                    <span>開立異常單</span>
+                </label>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="solution" value="option3">
+                    <span>截取異常樣品</span>
+                </label>
+            </div>
+        </div>
+        <label class="control-label col-sm-1">備註</label>
+        <div class="col-sm-3">
+            <textarea class="form-control" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group layer2 no-gutter">
+        <label class="control-label col-sm-1 gutter">發現者</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 基本型 + 每一組label+input 都加上div -->
+<h1>基本型 + 每一組label+input 都加上div</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2">
+        <div data-uw-anchor="anchor1">
+            <label class="control-label col-sm-1 ">客訴單號</label>
+            <div class="col-sm-3 layer3">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor2">
+            <label class="control-label col-sm-1">客訴日期</label>
+            <div class="col-sm-3 layer3">
+                <input type="date" class="form-control" name="issueDate">
+            </div>
+        </div>
+        <div data-uw-anchor="anchor3">
+            <label class="control-label col-sm-1">填單人</label>
+            <div class="col-sm-3 layer3">
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2">
+        <div data-uw-anchor="anchor4">
+            <label class="control-label col-sm-1">符合HSF產品</label>
+            <div class="col-sm-3">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor5">
+            <label class="control-label col-sm-1">臨時措施</label>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option1">
+                        <span>更換原料</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option2">
+                        <span>通知品保判定</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>開立異常單</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>截取異常樣品</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor6">
+            <label class="control-label col-sm-1">備註</label>
+            <div class="col-sm-3">
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2">
+        <div data-uw-anchor="anchor7">
+            <label class="control-label col-sm-1 gutter">發現者</label>
+            <div class="col-sm-3 gutter">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 基本型 + 每一組label+input 都加上div + no-gutter -->
+<h1>基本型 + 每一組label+input 都加上div + no-gutter</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2 no-gutter">
+        <div data-uw-anchor="anchor1">
+            <label class="control-label col-sm-1 ">客訴單號</label>
+            <div class="col-sm-3 layer3">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor2">
+            <label class="control-label col-sm-1">客訴日期</label>
+            <div class="col-sm-3 layer3">
+                <input type="date" class="form-control" name="issueDate">
+            </div>
+        </div>
+        <div data-uw-anchor="anchor3">
+            <label class="control-label col-sm-1">填單人</label>
+            <div class="col-sm-3 layer3">
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2 no-gutter">
+        <div data-uw-anchor="anchor4">
+            <label class="control-label col-sm-1">符合HSF產品</label>
+            <div class="col-sm-3">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor5">
+            <label class="control-label col-sm-1">臨時措施</label>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option1">
+                        <span>更換原料</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option2">
+                        <span>通知品保判定</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>開立異常單</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>截取異常樣品</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor6">
+            <label class="control-label col-sm-1">備註</label>
+            <div class="col-sm-3">
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2 no-gutter">
+        <div data-uw-anchor="anchor7">
+            <label class="control-label col-sm-1 gutter">發現者</label>
+            <div class="col-sm-3 gutter">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 基本型 + 每一組label+input 都加上div + required -->
+<h1>基本型 + 每一組label+input 都加上div + required</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2">
+        <div data-uw-anchor="anchor1" class="required">
+            <label class="control-label col-sm-1 ">客訴單號</label>
+            <div class="col-sm-3 layer3">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor2" class="required">
+            <label class="control-label col-sm-1">客訴日期</label>
+            <div class="col-sm-3 layer3">
+                <input type="date" class="form-control" name="issueDate">
+            </div>
+        </div>
+        <div data-uw-anchor="anchor3" class="required">
+            <label class="control-label col-sm-1">填單人</label>
+            <div class="col-sm-3 layer3">
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2">
+        <div data-uw-anchor="anchor4" class="required">
+            <label class="control-label col-sm-1">符合HSF產品</label>
+            <div class="col-sm-3">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor5" class="required">
+            <label class="control-label col-sm-1">臨時措施</label>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option1">
+                        <span>更換原料</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option2">
+                        <span>通知品保判定</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>開立異常單</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>截取異常樣品</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor6" class="required">
+            <label class="control-label col-sm-1">備註</label>
+            <div class="col-sm-3">
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2 no-gutter">
+        <div data-uw-anchor="anchor7" class="required">
+            <label class="control-label col-sm-1 gutter">發現者</label>
+            <div class="col-sm-3 gutter">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 基本型 + 每一組label+input 都加上div + required + thin-gutter-->
+<h1>基本型 + 每一組label+input 都加上div + required + thin-gutter</h1>
+<div class="layer1 form-horizontal">
+    <div class="form-group layer2 thin-gutter">
+        <div data-uw-anchor="anchor1" class="required">
+            <label class="control-label col-sm-1 ">客訴單號</label>
+            <div class="col-sm-3 layer3">
+                <input type="text" class="form-control"/>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor2" class="required">
+            <label class="control-label col-sm-1">客訴日期</label>
+            <div class="col-sm-3 layer3">
+                <input type="date" class="form-control" name="issueDate">
+            </div>
+        </div>
+        <div data-uw-anchor="anchor3" class="required">
+            <label class="control-label col-sm-1">數量</label>
+            <div class="col-sm-3 layer3">
+                <input type="number" class="form-control" name="amount">
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2 thin-gutter">
+        <div data-uw-anchor="anchor4" class="required">
+            <label class="control-label col-sm-1">填單人</label>
+            <div class="col-sm-3 layer3">
+                <select class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor5" class="required">
+            <label class="control-label col-sm-1">符合HSF產品</label>
+            <div class="col-sm-3">
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="Y">
+                        <span>是</span>
+                    </label>
+                </div>
+                <div class="radio-inline">
+                    <label>
+                        <input type="radio" name="isHSF" value="N">
+                        <span>否</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor6" class="required">
+            <label class="control-label col-sm-1">臨時措施</label>
+            <div class="col-sm-3">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option1">
+                        <span>更換原料</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option2">
+                        <span>通知品保判定</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>開立異常單</span>
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="solution" value="option3">
+                        <span>截取異常樣品</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group layer2 thin-gutter">
+        <div data-uw-anchor="anchor7" class="required">
+            <label class="control-label col-sm-1">備註</label>
+            <div class="col-sm-3">
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor8" class="required">
+            <label class="control-label col-sm-1">發現者</label>
+            <div class="col-sm-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="" value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                    </button>
+                  </span>
+                </div>
+            </div>
+        </div>
+        <div data-uw-anchor="anchor9">
+            <label class="control-label col-sm-1"></label>
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-default" data-uw-anchor="btnCalculator">
+                    <i value="bad" class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

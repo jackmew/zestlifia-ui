@@ -1,0 +1,29 @@
+{
+  "total" : 56,
+  "limit" : 21,
+  "offset" : 21,
+  "items" : [
+      {"icon": "back",    "abnNo": "IT2015120079", "type": "驗退", "createArea": "台灣地區", "abnWorkAttribute": "IQC", "deadline": "20151219", "level": "2 品保IQC", "beforeLevel": "核准"},
+      {"icon": "dueToday","abnNo": "IT2015120078", "type": "驗退", "createArea": "台灣地區", "abnWorkAttribute": "IQC", "deadline": "20151219", "level": "3 品保SQE", "beforeLevel": "退回"},
+      {"icon": "overDue" ,"abnNo": "IT2015120076", "type": "驗退", "createArea": "台灣地區", "abnWorkAttribute": "IQC", "deadline": "20151219", "level": "4 資材專員", "beforeLevel": "核准"},
+      {"icon": "",        "abnNo": "IT2015120073", "type": "驗退", "createArea": "台灣地區", "abnWorkAttribute": "IQC", "deadline": "20151219", "level": "5 資材主管", "beforeLevel": "核准"},
+      {"icon": "",        "abnNo": "IT2015120071", "type": "驗退", "createArea": "昆山地區", "abnWorkAttribute": "PQC", "deadline": "20151219", "level": "6 品保SQE", "beforeLevel": "核准"},
+      {"icon": "dueToday","abnNo": "IT2015120061", "type": "驗退", "createArea": "昆山地區", "abnWorkAttribute": "PQC", "deadline": "20151219", "level": "7 品保主管", "beforeLevel": "核准"},
+      {"icon": "",        "abnNo": "IT2015120069", "type": "驗退", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151219", "level": "8 品保最高主管", "beforeLevel": "核准"},
+      {"icon": "overDue", "abnNo": "IT2015120068", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "2 品保主管", "beforeLevel": "核准"},
+      {"icon": "",        "abnNo": "IT2015120066", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "3 處理單位主管", "beforeLevel": "核准"},
+      {"icon": "back",    "abnNo": "IT2015120063", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "4 處理單位人員", "beforeLevel": "退回"},
+      {"icon": "dueToday","abnNo": "IT2015120061", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "5 處理單位主管", "beforeLevel": "核准"},
+      {"icon": "overDue", "abnNo": "IT2015120059", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "6 品保PQC", "beforeLevel": "核准"},
+      {"icon": "back",    "abnNo": "IT2015120058", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "7 品保主管", "beforeLevel": "核准"},
+      {"icon": "dueToday","abnNo": "IT2015120056", "type": "成品(特性)", "createArea": "台灣地區", "abnWorkAttribute": "PQC", "deadline": "20151216", "level": "8 品保最高主管", "beforeLevel": "核准"},
+      {"icon": "",        "abnNo": "IT2015120053", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151209", "level": "2 品保FQC", "beforeLevel": "同意"},
+      {"icon": "",        "abnNo": "IT2015120051", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151209", "level": "3 品保主管", "beforeLevel": "同意"},
+      {"icon": "back",    "abnNo": "IT2015120049", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151212", "level": "4 資材專員", "beforeLevel": "同意"},
+      {"icon": "dueToday","abnNo": "IT2015120048", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151212", "level": "5 資材主管", "beforeLevel": "同意"},
+      {"icon": "back",    "abnNo": "IT2015120047", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151212", "level": "6 品保FQC", "beforeLevel": "同意"},
+      {"icon": "",        "abnNo": "IT2015120046", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151212", "level": "7 品保主管", "beforeLevel": "核准"},
+      {"icon": "dueToday","abnNo": "IT2015120045", "type": "委外半成品", "createArea": "台灣地區", "abnWorkAttribute": "FQC", "deadline": "20151212", "level": "8 品保最高主管", "beforeLevel": "核准"}
+  ],
+  "status" : "200"
+}

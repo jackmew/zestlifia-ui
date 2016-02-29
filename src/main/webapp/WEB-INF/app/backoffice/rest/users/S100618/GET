@@ -1,0 +1,18 @@
+{
+  "status" : 200,
+  "total" : 1,
+  "limit" : 0,
+  "offset" : 0,
+  "items" : [ {
+    "_id": "S100618",
+    "username" : "S100618",
+    "display" : "鮑之勇",
+    "email" : "鮑之勇@taiflex.com.tw",
+    "effectiveDate": "2010-01-01T00:00:00.000Z",
+    "mobile" : "+886919-123-456",
+    "branch": "珠海分公司",
+    "department": "秦皇島辦事處",
+    "extension": "86103",
+    "note": "測試用資料"
+  } ]
+}

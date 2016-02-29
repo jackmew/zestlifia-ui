@@ -1,0 +1,413 @@
+<div class="collapse" data-uw-anchor="organizeSection">
+    <div class="form-group">
+        <label class="control-label col-sm-2 gutter">是否組織專案團隊:</label>
+        <div class="col-sm-2 gutter">
+            <label for="isOrgPrjTeam_Y" class="radio-inline">
+                <input data-uw-anchor="isOrgPrjTeam" type="radio" name="isOrgPrjTeam" id="isOrgPrjTeam_Y" value="Y" checked> 是
+            </label>
+            <label for="isOrgPrjTeam_N" class="radio-inline">
+                <input data-uw-anchor="isOrgPrjTeam" type="radio" name="isOrgPrjTeam" id="isOrgPrjTeam_N" value="N"> 否
+            </label>
+        </div>
+        <div data-uw-anchor="tAManagementWay" class="collapse">
+            <label for="managementWay" class="control-label col-sm-1 gutter">處置方式</label>
+            <div class="col-sm-7 gutter">
+                <textarea class="form-control" rows="3" name="managementWay" id="managementWay"></textarea>
+            </div>
+        </div>
+        <div data-uw-anchor="divGridOrgProjTeam" class="col-sm-8">
+            <table data-uw-anchor="gridOrgProjTeam" class="table table-bordered table-striped table-hover uw-selectable">
+                <thead>
+                <tr>
+                    <th>勾選</th>
+                    <th>專案團隊</th>
+                    <th>權責單位</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="service">
+                    </td>
+                    <td>技服</td>
+                    <td>
+                        <input type="radio" name="rResUnit"  value="serviceUnit">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="produce" aria-label="...">
+                    </td>
+                    <td>生產</td>
+                    <td>
+                        <input type="radio" name="rResUnit"value="produceUnit" aria-label="...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="technique" aria-label="...">
+                    </td>
+                    <td>技術</td>
+                    <td>
+                        <input type="radio" name="rResUnit"value="techniqueUnit" aria-label="...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="store" aria-label="...">
+                    </td>
+                    <td>倉管</td>
+                    <td>
+                        <input type="radio" name="rResUnit"value="storeUnit" aria-label="...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="quality" aria-label="...">
+                    </td>
+                    <td>品保</td>
+                    <td>
+                        <input type="radio" name="rResUnit"value="qualityUnit" aria-label="...">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cbOrgPrjTeamDetail" value="research" aria-label="...">
+                    </td>
+                    <td>研發</td>
+                    <td>
+                        <input type="radio" name="rResUnit"value="researchUnit" aria-label="...">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr/>
+</div>
+
+<div class="collapse" data-uw-anchor="analyzeSection">
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">發生頻率</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option selected="selected">初次發生</option>
+                <option>非初次發生</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-1 gutter">不良品取得</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option selected="selected">Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-1 gutter">發生時機</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option selected="selected">使用前</option>
+                <option>使用後</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">外觀</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="異物 氣泡">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">物性</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">管理性</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">ROHS</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">不良位置</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="卷頭 邊緣">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+        <label class="control-label col-sm-1 gutter">不良面</label>
+        <div class="col-sm-3 gutter">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="" value="Cu面">
+                        <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fa fa-search" style="font-size:18px; color:steelblue;"></i>
+                        </button>
+                        </span>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">不良形式</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control">
+                <option selected="selected">目視可見</option>
+                <option>透光可見</option>
+                <option>反光可見</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-2 gutter">不良是否有手感</label>
+        <div class="col-sm-2 gutter">
+            <select class="form-control">
+                <option selected="selected">Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-2 gutter">表面清潔後不良是否可見</label>
+        <div class="col-sm-2 gutter">
+            <select class="form-control">
+                <option selected="selected">Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">備註說明</label>
+        <div class="col-sm-11 gutter">
+            <textarea class="form-control" rows="5"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-1 gutter">廠內外問題</label>
+        <div class="col-sm-4 gutter">
+            <select class="form-control">
+                <option selected="selected"></option>
+                <option>A:非台虹責任。</option>
+                <option>B:客戶端需求高於工廠端能力。</option>
+                <option>C:廠內責任，經業務手法回應客戶，無需回覆報告。</option>
+                <option>D:廠內責任，需提供報告進行消退(補貨或折讓)列帳管理。</option>
+            </select>
+        </div>
+        <label class="control-label col-sm-2 col-sm-offset-1 gutter">客戶不良工站</label>
+        <div class="col-sm-4 gutter">
+            <select class="form-control">
+                <option selected="selected"></option>
+                <option>裁切 Shearing</option>
+                <option>CNC鑽孔 CNC Drilling</option>
+                <option>銅電鍍 PTH</option>
+                <option>貼膜 Lamination</option>
+                <option>曝光 Exposure</option>
+                <option>顯影 Exposure</option>
+                <option>蝕刻 Etching</option>
+                <option>剝膜 Stripping</option>
+                <option>假接著 Pre Lamination</option>
+                <option>壓著 Hot Press</option>
+                <option>表面處理 Pre-treatment</option>
+                <option>測試 Pre-treatment</option>
+                <option>沖製 Punch</option>
+                <option>檢測 Inspection</option>
+                <option>組裝 Assembly</option>
+                <option>包裝 Package</option>
+            </select>
+        </div>
+    </div>
+    <hr/>
+</div>
+<div class="collapse" data-uw-anchor="specificSection">
+    <div class="form-group">
+        <div class="col-sm-12 gutter">
+            <table data-uw-anchor="gridOrgProjTeam" class="table table-bordered table-striped table-hover uw-selectable">
+                <thead>
+                <tr>
+                    <th>專案團隊</th>
+                    <th>權責單位</th>
+                    <th>負責人</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>技服</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="serviceUnit" aria-label="...">
+                    </td>
+                    <td>XXX</td>
+                </tr>
+                <tr>
+                    <td>生產</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="produceUnit" aria-label="...">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>技術</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="techniqueUnit" aria-label="...">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>倉管</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="storeUnit" aria-label="...">
+                    </td>
+                    <td>XXX</td>
+                </tr>
+                <tr>
+                    <td>品保</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="qualityUnit" aria-label="...">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>研發</td>
+                    <td>
+                        <input type="radio" name="rResUnit" value="researchUnit" aria-label="...">
+                    </td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="resPerson" class="control-label col-sm-1 gutter">負責人</label>
+        <div class="col-sm-3 gutter">
+            <select class="form-control" id="resPerson">
+                <option>XXX</option>
+                <option>YYY</option>
+                <option>ZZZ</option>
+            </select>
+        </div>
+    </div>
+
+    <hr>
+</div>
+<div class="collapse"  data-uw-anchor="clientVerifySection">
+    <div class="form-group">
+        <div data-uw-anchor="radioClientVerify">
+            <label class="control-label col-sm-1 gutter">客戶端驗證</label>
+            <div class="col-sm-3 gutter">
+                <div class="input-group">
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="isVerify" value="Y">
+                            <span>是</span>
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label>
+                            <input type="radio" name="isVerify" value="N" >
+                            <span>否</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-uw-anchor="assistant" class="collapse">
+            <label class="control-label col-sm-1 gutter">業務助理</label>
+            <div class="col-sm-3 gutter">
+                <select name="" class="form-control">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+
+        <div data-uw-anchor="clientVerifyCompleteDate" class="collapse">
+            <label class="control-label col-sm-1 gutter">客戶驗證預計完成日</label>
+            <div class="col-sm-3 gutter">
+                <input type="date" class="form-control"/>
+            </div>
+        </div>
+    </div>
+    <hr/>
+</div>
+
+<div data-uw-anchor="signOffContainer">
+
+    <div class="form-group">
+        <div data-uw-anchor="signoffResult">
+            <div data-uw-anchor="radioSignOffResult">
+                <label class="control-label col-sm-1 gutter">簽核結果</label>
+                <div class="col-sm-3 gutter">
+                    <div class="input-group">
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="isResult" value="AGREE">
+                                <span>同意</span>
+                            </label>
+                        </div>
+                        <div class="radio-inline">
+                            <label>
+                                <input type="radio" name="isResult" value="BACK" >
+                                <span>退回</span>
+                            </label>
+                        </div>
+                        <div class="radio-inline" data-uw-anchor="resultReset" style="display: none;">
+                            <label>
+                                <input type="radio" name="isResult" value="RESET" >
+                                <span>重新指派</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-uw-anchor="responsibility" class="collapse">
+                <label class="control-label col-sm-1 gutter">負責人</label>
+                <div class="col-sm-3 gutter">
+                    <select class="form-control">
+                        <option value=""></option>
+                        <option value="">XXX</option>
+                        <option value="">YYY</option>
+                        <option value="">ZZZ</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div data-uw-anchor="signoffComment">
+            <label class="control-label col-sm-1 gutter">簽核意見</label>
+            <div class="col-sm-11 gutter">
+                <textarea class="form-control" rows="5"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
