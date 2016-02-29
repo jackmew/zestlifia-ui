@@ -31,39 +31,6 @@ public class App extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/zestlifia/**").addResourceLocations("/WEB-INF/app/");
     }
 
-    @RequestMapping("/test")
-    @ResponseBody
-    String home() {
-        System.out.println("testxyz");
-        return "Hello World!";
-    }
-
-    @RequestMapping(value = "/zestlifia/rest/{id}")
-    @ResponseBody
-    String rest(@PathVariable("id") String id) {
-
-        JSONObject jsonData = FileUtil.getRest(id);
-
-        return jsonData.toJSONString();
-    }
-    @RequestMapping(value = "/zestlifia/rest/{path}/{id}")
-    @ResponseBody
-    String restParams(@PathVariable("path") String path, @PathVariable("id") String id) {
-
-        String fileName = path + File.separator + id ;
-
-        JSONObject jsonData = FileUtil.getRest(fileName);
-
-        return jsonData.toJSONString();
-    }
-
-    @RequestMapping("/")
-    public String start(){
-        System.out.println("start backoffice");
-        return "redirect:/zestlifia/backoffice/index.html";
-    }
-
-
 
 	public static void main(String[] args) {
 
@@ -71,4 +38,10 @@ public class App extends WebMvcConfigurerAdapter {
 
 		SpringApplication.run(App.class, args);
 	}
+
+    @RequestMapping("/")
+    public String start(){
+        System.out.println("start zestlifia");
+        return "redirect:/zestlifia/backoffice/index.html";
+    }
 }
